@@ -1,0 +1,68 @@
+STEP 1:
+Login into your metamask extension and select an account in it for testing. At the top in
+networks select Goerli test network.
+STEP 2:
+Now go to https://goerlifaucet.com/ and create an account upon creating the account
+enter your metamask account address in the text field and then click on send ETH
+This sends you around 0.2 Goerlieth per day for testing purpose we can call it fake ether
+STEP 3:
+Now open remix-ide in another tab navigate to deploy and run transactions tab and in
+the environment select Injected-metamask provider. This will connect your metamask
+account to your remix-ide.
+STEP 4:
+Now go to home tab in remix-ide navigate to workspaces and in default_workspaces tab
+select contracts and in contracts folder select storage.sol option. An ide will open up and
+in that ide paste the solidity code which is present in Smartcontracts.txt.
+STEP 5:
+In the Deploy and Run transactions tab select on Deploy smart contracts don’t forget to
+specify your metamask i.e on which account the smartcontract should be deployed.
+After clicking on deploy the smartcontract the metamask pops out for transaction
+confirmation and the smartcontract will be deployed.
+STEP 6:
+Now open a linux terminal in your system if you are a windows user you can make of
+windows subsystem for linux for running shell commands.
+STEP 7:
+Open the github https://github.com/cehguru/Batch2-vignanblockchain.git and git clone
+this repository. We have uploaded all our project files to github for data backup.
+STEP 8:
+Upon cloning change the directory to Batch2-vignanblockchain and type
+$ ls
+This will show you the contents of the repository
+Now check your node version by typing
+$ node -v
+If the version is below 10 then type
+$ nvm use 18
+This enables you to use the latest version of node
+31
+STEP 9:
+ Now to run this script you should have some latest dependencies we generally cannot
+know what depenedencies to use so simply type
+$ npm install
+This will install all the dependencies that are required to run the project
+STEP 10:
+Now the dependencies got installed further we have to run the project on local host for
+doing it just type
+$ npm run
+This will start the react scripts and runs your project on http://localhost:3000/
+STEP 11:
+Open your localhost and you can see the project is running this interface is called react
+app now in the first page you are asked to fill the form details of the student i.e keeping
+in mind that you are the issuer. Fill the form and then click on add certificate. The
+metamask pops up once again and asks for transaction confirmation confirm the
+transaction. This will add certificate data to the blockchain and a hash will be returned
+to you.
+STEP 12:
+Now click on view certificate there you can see a generated certificate with your details
+and hash id retrieved from blockchain in it
+STEP 13:
+Now copy the hash and click on verify option. A new tab will be opened there paste the
+hash you have copied and click on verify.
+STEP 14:
+Upon clicking on verify it redirects to https://goerli.etherscan.io/ there you can see your
+transaction. If the data is sent into the blockchain you can see a success message in the
+description.
+STEP 15:
+Now go to the bottom of the page there you can see an option called click to see more
+click on it there you can find the input data in some binary and mixed hash version.
+Click on view input data in utf-8 format there you can see the details of your certificate
+describing your name, course and e-mail. 
